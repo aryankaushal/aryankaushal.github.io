@@ -6,6 +6,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(57, 181, 36);
     text-align: center;
+    font-size: 28px;
 }
 
 h2 {
@@ -16,23 +17,62 @@ h2 {
 }
 
 h3 {
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(193, 242, 251);
     text-align: center;
 }
 
-.rectangle 
-{
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(231, 193, 251);
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%; 
+    /* float:left; */
+  }
+
+.rect_gauge {
     width: 200px;
     height: 100px;
     position: fixed;
-    bottom: 360px;
-    right: 400px;
+    top: 55%;
+    left: 26%;
     background-color: rgb(112, 220, 93);
-    /* border-radius: 25px; */
     margin: 10 auto;
     margin-top: 0px;
-    /* transform: rotate(-10deg); */
     margin-bottom: 10px;
+    transform: rotate(-10deg);
+}
+
+.rect_track {
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 60%;
+    left: 60%;
+    background-color: rgb(220, 93, 184);
+    margin: 10 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    transform: rotate(10deg);
+}
+
+.rect_reduce {
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 75%;
+    left: 40%;
+    background-color: rgb(220, 174, 93);
+    margin: 10 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    transform: rotate(-5deg);
 }
 
 body {
@@ -46,15 +86,13 @@ body {
     gap: 10px;
 }
 
-.leaf-3 {
+/* .leaf-3 {
     width: 40px;
     height: 40px;
-    position: fixed;
-    /* bottom: 360px;
-    right: 400px; */
-    top: 110px;
-    left: 590px;
+    position: relative;
+    top: 14%;
+    left: 41%;
     border-radius: 0 90px;
     background-color: #2bb32b;
     transform: rotate(90deg);
-}
+} */
