@@ -9,12 +9,12 @@ h1 {
     font-size: 28px;
 }
 
-h2 {
+/* h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 75px;
     text-align: center;
-}
+} */
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -33,8 +33,37 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     width: 17%; 
-    /* float:left; */
-  }
+}
+
+.gauge_hover {
+    width: 150px;
+    height: 100px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.gauge_hover:hover.tooltip {
+    visibility: visible;
+    opacity: 1;
+}
 
 .rect_gauge {
     width: 200px;
@@ -47,6 +76,7 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     transform: rotate(-10deg);
+    /* float:right; */
 }
 
 .rect_track {
@@ -60,6 +90,7 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     transform: rotate(10deg);
+    /* float:left; */
 }
 
 .rect_reduce {
