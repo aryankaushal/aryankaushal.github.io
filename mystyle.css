@@ -36,18 +36,48 @@ h4 {
 }
 
 .gauge_hover {
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 25px;
     background-color: #db348d;
     color: #fff;
     padding: 10px;
     position: relative;
+    top: 70%;
+    left: 26%;
+    transform: rotate(-10deg);
+    text-align: center;
+}
+
+.track_hover {
+    width: 100px;
+    height: 25px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 65%;
+    transform: rotate(10deg);
+    text-align: center;
+}
+
+.reduce_hover {
+    width: 100px;
+    height: 25px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 60%;
+    left: 40%;
+    transform: rotate(-5deg);
+    text-align: center;
 }
 
 .tooltip {
     visibility: hidden;
     width: 150px;
-    background-color: #333;
+    background-color: #f599ef;
     color: #fff;
     text-align: center;
     border-radius: 5px;
@@ -60,12 +90,30 @@ h4 {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.gauge_hover:hover.tooltip {
+.gauge_hover:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
 
-.rect_gauge {
+.track_hover:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.reduce_hover:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* x {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 45%;
+    transform: rotate(45deg);
+    transform-origin: left;
+    } */
+
+/* .rect_gauge {
     width: 200px;
     height: 100px;
     position: fixed;
@@ -76,7 +124,6 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     transform: rotate(-10deg);
-    /* float:right; */
 }
 
 .rect_track {
@@ -90,7 +137,6 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     transform: rotate(10deg);
-    /* float:left; */
 }
 
 .rect_reduce {
@@ -104,7 +150,7 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     transform: rotate(-5deg);
-}
+} */
 
 body {
     padding: 0;
