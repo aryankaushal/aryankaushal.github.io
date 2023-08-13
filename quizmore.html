@@ -1,23 +1,135 @@
 <!DOCTYPE html>
-
 <head>
     <h1 style="font-family: 'Arial'; text-align: center; font-size: 50px">karbon Quiz </h1>
-    <p style="font-family: 'Arial'; color: rgb(45, 23, 71); text-align: center; font-size: 20px">You have chosen to share more detail. <br> Answer the questions truthfully to get your carbon footprint estimation!</p>
+    <p style="font-family: 'Arial'; color: rgb(45, 23, 71); text-align: center; font-size: 20px">You have chosen to share:</p>
+    <p class="hover-underline-animation" style="font-family: 'Arial'; color: rgb(45, 23, 71); text-align: center; font-size: 25px"><b>MORE DETAIL</b></p> 
+    <p style="font-family: 'Arial'; color: rgb(45, 23, 71); text-align: center; font-size: 20px"> Answer the questions truthfully to get your carbon footprint estimation!</p>
+    <br><hr><br><br>
+    <style>
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* This will make the container take up the full viewport height */
+        }
+    </style>
 </head>
+
 <body>
-    <button class="accordion"><b>Food</b></button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
-    </div>
+    <div class="center-container">
+
+        <button class="accordion"><b>Food</b></button>
+        <div class="panel">
+            <p style="font-family: 'Arial'; font-size: 22px">1) What cuisine do you most frequently cuisine?</p>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="indian"><b>
+                    Indian</b> </label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="mexican"><b>
+                    Mexican</b></label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="italian"><b>
+                    Italian</b> </label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="medi"><b>
+                    Mediterranean</b> </label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="oriental"><b>
+                    Oriental</b> </label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="cuisine" value="western"><b>
+                    American/British</b> </label>
+            <br>
+            <hr>
+            
+            <p style="font-family: 'Arial'; font-size: 22px">2) What best describes your diet/eating habits?</p>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="diet" value="veg"><b>
+                    Vegetarian</b> </label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="diet" value="nonveg"><b>
+                    Non-vegetarian</b> (vegetarian + meat/poultry/seafood)</label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="diet" value="pesc"><b>
+                    Pescatarian</b> (vegetarian + seafood)</label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="diet" value="egg"><b>
+                    Eggatarian</b> (vegetarian + egg)</label>
+            <br>
+            <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="diet" value="vegan"><b>
+                    Vegan</b> (vegetarian + no animal products)</label> 
+            <br><br>
+
+        </div>
+        
+        <button class="accordion1"><b>Transport</b></button>
+        <div class="panel1">
+        <!-- Transport Questions -->
+        <p style="font-family: 'Arial'; font-size: 22px">1) Where do you most frequently travel to?</p>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="travel_location" value="School"><b> School</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="travel_location" value="Work"><b> Work</b></label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="travel_location" value="Other"><b>
+                Other</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="travel_location" value="Dont"><b>
+                I don't travel much</b> </label>
+        <hr>
+        
+        <p style="font-family: 'Arial'; font-size: 22px">2) What mode of transport do you use most frequently?</p>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="Car"><b>
+                Car</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="Bus"><b>
+                Bus</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="rickshaw"><b>
+                Auto-rickshaw</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="Cycle"><b>
+                Bicycle</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="Bike"><b>
+                Motorcycle/Scooter</b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="mode" value="Walk"><b>
+                Walk</b> </label>
+        <hr>
+
+        <p style="font-family: 'Arial'; font-size: 22px">3) How long is your daily commute (how much do you travel everyday?)<br><br>
+            <input type="number" name="daily_commute_distance" style="font-family: 'Arial'; font-size: 20px"><b> kilometers</b> 
+        </p>
+        <hr>
+        
+        <p style="font-family: 'Arial'; font-size: 22px">4) What fuel does your most used mode of transport use?</p>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="Petrol"><b> Petrol</b></label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="Diesel"><b> Diesel </b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="EV"><b> Electricity (EV) </b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="CNG"><b> CNG
+            </b> (generally with auto-rickshaws) </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="None"><b> None
+            </b> </label>
+        <br>
+        <label style="font-family: 'Arial'; font-size: 20px"><input type="radio" name="transport_fuel" value="IDK"><b> I don't know
+            </b> </label>
+        <br>
+        <br>
+
+        </div>
     
-    <button class="accordion1"><b>Transport</b></button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
-    </div>
-    
-    <button class="accordion2"><b>Electricity</b></button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
+        <button class="accordion2"><b>Household</b></button>
+        <div class="panel2">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion3"><b>Purchases</b></button>
+        <div class="panel3">
+            <p>Lorem ipsum...</p>
+        </div>
     </div>
 
     <link rel="stylesheet" href="quizmore.css">
