@@ -1,4 +1,5 @@
 body {
+    padding: 0;
     background-color: rgb(0, 0, 0);
 }
 
@@ -9,11 +10,10 @@ h1 {
     font-size: 28px;
 }
 
-h2{
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(236, 251, 193);
     font-size: 16px;
-    /* left: 10%; */
     padding-left: 30%;
 }
 
@@ -36,12 +36,9 @@ p {
 }
 
 .button_join {
-    /* background-color: #b01d6c; */
     font-size: 16pt;
     color: #f599ef;
-    
 }
-
 
 .center {
     display: block;
@@ -120,9 +117,60 @@ p {
     opacity: 1;
 }
 
-body {
-    padding: 0;
+.q1 {
+    width: 100px;
+    height: 25px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: rotate(-5deg);
+    text-align: center;
 }
+
+.q2 {
+    width: 100px;
+    height: 25px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: rotate(-5deg);
+    text-align: center;
+}
+
+.q3 {
+    width: 100px;
+    height: 25px;
+    background-color: #db348d;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: rotate(-5deg);
+    text-align: center;
+}
+
+.q1:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.q2:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.q3:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .container {
     margin: 20px;
