@@ -9,13 +9,6 @@ h1 {
     font-size: 28px;
 }
 
-/* h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 75px;
-    text-align: center;
-} */
-
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(193, 242, 251);
@@ -54,7 +47,7 @@ h4 {
     background-color: #db348d;
     color: #fff;
     padding: 10px;
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 65%;
     transform: rotate(10deg);
@@ -67,8 +60,8 @@ h4 {
     background-color: #db348d;
     color: #fff;
     padding: 10px;
-    position: fixed;
-    top: 60%;
+    position: relative;
+    top: 50%;
     left: 40%;
     transform: rotate(-5deg);
     text-align: center;
@@ -105,53 +98,6 @@ h4 {
     opacity: 1;
 }
 
-
-/* x {
-    border-bottom: 3px solid rgb(255, 0, 0);
-    width: 45%;
-    transform: rotate(45deg);
-    transform-origin: left;
-    } */
-
-/* .rect_gauge {
-    width: 200px;
-    height: 100px;
-    position: fixed;
-    top: 55%;
-    left: 26%;
-    background-color: rgb(112, 220, 93);
-    margin: 10 auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    transform: rotate(-10deg);
-}
-
-.rect_track {
-    width: 200px;
-    height: 100px;
-    position: fixed;
-    top: 60%;
-    left: 60%;
-    background-color: rgb(220, 93, 184);
-    margin: 10 auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    transform: rotate(10deg);
-}
-
-.rect_reduce {
-    width: 200px;
-    height: 100px;
-    position: fixed;
-    top: 75%;
-    left: 40%;
-    background-color: rgb(220, 174, 93);
-    margin: 10 auto;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    transform: rotate(-5deg);
-} */
-
 body {
     padding: 0;
 }
@@ -162,5 +108,3 @@ body {
     flex-wrap: wrap;
     gap: 10px;
 }
-
-
