@@ -9,6 +9,14 @@ h1 {
     font-size: 28px;
 }
 
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(236, 251, 193);
+    font-size: 16px;
+    /* left: 10%; */
+    padding-left: 30%;
+}
+
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(193, 242, 251);
@@ -26,6 +34,14 @@ p {
     color: rgb(160, 194, 118);
     text-align: center;
 }
+
+.button_join {
+    /* background-color: #b01d6c; */
+    font-size: 16pt;
+    color: #f599ef;
+    
+}
+
 
 .center {
     display: block;
