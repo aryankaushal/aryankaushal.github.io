@@ -54,20 +54,6 @@ body{
     transition: 0.4s;
 }
 
-.accordion_ {
-    background-color: #ff9100;
-    font-size: 30px;
-    border-radius: 14px 14px 1px 0px;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 8px;
-    width: 70%;
-    text-align: left;
-    border: rgb(0, 0, 0);
-    outline: 2px solid rgb(255, 255, 255);
-    transition: 0.4s;
-}
-
 .active,
 .accordion:hover {
     background-color: #9cb6b0;

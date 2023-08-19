@@ -1,0 +1,87 @@
+.footer {
+    background-color: #362b4f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-logo img {
+    max-width: 100px;
+    margin-right: 20px;
+    animation: bounce 7s infinite;
+}
+.footer-text p {
+    font-size: 18px;
+    margin: 0;
+}
+.footer-text .hover-underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-text .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff9b04;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-text .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+.footer-github img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.footer-github img:hover {
+    transform: scale(1.2);
+}
+@keyframes bounce {
+    0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100%,
+
+    0%
+    {
+        transform: translateY(0);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+
+    40% {
+      transform: translateX(20px);
+    }
+
+    60% {
+        transform: translateY(10px);
+    }
+
+    80%
+    {
+        transform: translateX(-15px);
+    }
+}
